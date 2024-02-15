@@ -36,10 +36,10 @@ if  (water < 7) {
 
 else { 
     console.log("You have watered your seed " + water +" times");
-    console.log(growTree(water, '#'));
+    console.log(growTree());
 }
 
-function growTree(height = 10, pattern = '#') {
+function growTree(height = water, pattern = '#') {
 
     let space = ' ';
     let treeMaker = ''
@@ -54,7 +54,7 @@ function growTree(height = 10, pattern = '#') {
     for (let row = 1; row < height/6; row++) {
 
         stumpMaker += `${space.repeat(height*3/8)}${pattern.repeat(height/4)}\n`;
-        console.log('YOU grew a tree!\n');
+        console.log('You grew a tree!\n');
     }
 
     treeMaker += stumpMaker;
