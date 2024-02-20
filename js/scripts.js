@@ -62,3 +62,54 @@ function growTree(height = water, pattern = '#') {
 }
 
 
+/*
+Class exercise 
+*/
+
+class rollDice {
+    constructor(side="") {
+        this.side = side;
+        }
+    roll() {
+        let random = Math.ceil(Math.random() * this.side);
+        console.log("you rolled a " + random );
+
+    }
+}
+
+const d6 = new rollDice(6);
+const d12 = new rollDice(12);
+
+d6.roll();
+d12.roll();
+
+
+class movie {
+    constructor(title = "", year = "", director = "", genre = "") {
+        this.title = title;
+        this.year = year;
+        this.director = director;
+        this.genre = genre;
+        
+    }
+}
+const movie1 = {
+    title: "The Shawshank Redemption",
+    year: 1994,
+    director: "Frank Darabont",
+    genre: "Drama",
+  };
+  
+  const movie2 = {
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    year: 2001,
+    director: "Peter Jackson",
+    genre: "Fantasy",
+  };
+  
+  const movie3 = {
+    title: "Spirited Away",
+    year: 2001,
+    director: "Hayao Miyazaki",
+    genre: "Animation",
+  };
